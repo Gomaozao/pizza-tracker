@@ -4,7 +4,6 @@ import (
 	"pizza-tracker-go/internal/models"
 )
 
-// Handler holds all dependencies for HTTP handlers
 type Handler struct {
 	orders *models.OrderModel
 }
