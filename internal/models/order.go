@@ -3,6 +3,7 @@ package models
 import (
 	"time"
 
+	"github.com/teris-io/shortid"
 	"gorm.io/gorm"
 )
 
@@ -30,13 +31,13 @@ type OrderModel struct {
 }
 
 type Order struct {
-	ID           string    `gorm:"primaryKey;size:14" json:"id"`
-	Status       string    `gorm:"not null" json:"status"`
-	CustomerName string    `gorm:"not null" json:"customerName"`
-	Phone        string    `gorm:"not null" json:"phone"`
-	Address      string    `gorm:"not null" json:"address"`
-	Items        string    `gorm:"ForeignKey:OrderID" json:"pizzas"`
-	CreatedAt    time.Time `json:"CreatedAt"`
+	ID           string      `gorm:"primaryKey;size:14" json:"id"`
+	Status       string      `gorm:"not null" json:"status"`
+	CustomerName string      `gorm:"not null" json:"customerName"`
+	Phone        string      `gorm:"not null" json:"phone"`
+	Address      string      `gorm:"not null" json:"address"`
+	Items        []OrderItem `gorm:"foreignKey:OrderID" json:"pizzas"`
+	CreatedAt    time.Time   `json:"CreatedAt"`
 }
 
 type OrderItem struct {
