@@ -90,14 +90,3 @@ func (h *Handler) serveCustomer(c *gin.Context) {
 		Statuses: models.OrderStatuses,
 	})
 }
-
-	order, err := h.orders.GetOrder(orderID)
-	if err != nil {
-		c.String(http.StatusNotFound, "Order not found")
-		return
-	}
-
-	c.HTML(http.StatusOK, "customer.tmpl", gin.H{
-		"Order": order,
-	})
-}
