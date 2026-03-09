@@ -1,6 +1,6 @@
 # 🍕 Pizza Tracker
 
-![Status do Projeto](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+![Status do Projeto](https://img.shields.io/badge/status-finalizado-success)
 ![Go Version](https://img.shields.io/github/go-mod/go-version/Gomaozao/pizza-tracker)
 
 Sistema full-stack para rastreamento de pedidos de pizza em tempo real. Permite que clientes façam pedidos e acompanhem seu status usando um ID, enquanto administradores recebem notificações instantâneas de novos pedidos via Server-Sent Events (SSE).
