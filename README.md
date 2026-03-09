@@ -33,15 +33,13 @@ Sistema full-stack para rastreamento de pedidos de pizza em tempo real. Permite 
 
 2. Instale as dependências:
   O Go Modules gerenciará isso automaticamente.
-  ```bash
 
-  go mod download
+  `go mod download`
 
 # Execute a aplicação:
-O ponto de entrada da aplicação está na pasta cmd.
-```bash
+O entry point da aplicação está em /cmd.
 
-go run cmd/main.go
+`go run cmd/main.go`
 
 
 # Acesse no navegador:
