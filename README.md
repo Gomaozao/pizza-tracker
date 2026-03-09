@@ -28,20 +28,20 @@ Sistema full-stack para rastreamento de pedidos de pizza em tempo real. Permite 
 
 1.  **Clone o repositório:**
     ```bash
-    `git clone https://github.com/Gomaozao/pizza-tracker.git`
-    `cd pizza-tracker`
+    git clone https://github.com/Gomaozao/pizza-tracker.git
+    cd pizza-tracker
 
 2. Instale as dependências:
   O Go Modules gerenciará isso automaticamente.
-  bash
+  ```bash
 
-  `go mod download`
+  go mod download
 
 # Execute a aplicação:
 O ponto de entrada da aplicação está na pasta cmd.
-bash
+```bash
 
-`go run cmd/main.go`
+go run cmd/main.go
 
 
 # Acesse no navegador:
